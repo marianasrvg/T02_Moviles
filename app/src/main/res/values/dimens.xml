@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="line_activity_main">1dp</dimen>
+    <dimen name="title_activity_main">18pt</dimen>
+    <dimen name="subtitle_activity_main">9pt</dimen>
+    <dimen name="paddle_activity_main_relatively">5dp</dimen>
+    <dimen name="btn_border_activity_main">1dp</dimen>
+    <dimen name="btn_box_size_activity_main">50dp</dimen>
+    <dimen name="btn_border_round_activity_main">3dip</dimen>
+    <dimen name="btn_margins_activity_main">5dp</dimen>
+</resources>

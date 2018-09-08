@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Bicycle</string>
+    <string name="title_activy_main">VINTAGE BICYCLE</string>
+    <string name="colors_activity_main">COLOR</string>
+    <string name="btn_S_activity_main">S</string>
+    <string name="btn_M_activity_main">M</string>
+    <string name="btn_L_activity_main">L</string>
+    <string name="btn_XL_activity_main">XL</string>
+</resources>

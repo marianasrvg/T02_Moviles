@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityMain">
+    <LinearLayout
+        android:id="@+id/layout_main_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/image_main_bici"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside"
+            android:src="@drawable/image_bicycle"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout_main_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/line_activity_main"
+            android:background="@android:color/black"
+            android:orientation="vertical">
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_main_relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/paddle_activity_main_relatively">
+
+            <TextView
+                android:id="@+id/text_title_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/title_activy_main"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/title_activity_main"/>
+
+            <TextView
+                android:id="@+id/text_colors_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_title_main"
+                android:textSize="@dimen/subtitle_activity_main"
+                android:textColor="@android:color/black"
+                android:text="@string/colors_activity_main"/>
+
+            <RadioGroup
+                android:id="@+id/radiogroup_colors_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_colors_main"
+                android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radio_btn_gray_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineAmbientShadowColor="@color/colorGray"
+                    android:outlineSpotShadowColor="@color/colorGray"
+                    android:shadowColor="@color/colorGray"
+                    android:buttonTint="@color/colorGray"/>
+                <RadioButton
+                    android:id="@+id/radio_btn_brown_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineAmbientShadowColor="@color/colorBrown"
+                    android:outlineSpotShadowColor="@color/colorBrown"
+                    android:shadowColor="@color/colorBrown"
+                    android:buttonTint="@color/colorBrown"/>
+                <RadioButton
+                    android:id="@+id/radio_btn_pink_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineAmbientShadowColor="@color/colorPink"
+                    android:outlineSpotShadowColor="@color/colorPink"
+                    android:shadowColor="@color/colorPink"
+                    android:buttonTint="@color/colorPink"/>
+                <RadioButton
+                    android:id="@+id/radio_btn_black_main"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:outlineAmbientShadowColor="@color/colorBlack"
+                    android:outlineSpotShadowColor="@color/colorBlack"
+                    android:shadowColor="@color/colorBlack"
+                    android:buttonTint="@color/colorBlack"/>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_s_size"
+                android:layout_width="@dimen/btn_box_size_activity_main"
+                android:layout_height="@dimen/btn_box_size_activity_main"
+                android:layout_below="@id/radiogroup_colors_main"
+                android:layout_marginTop="@dimen/btn_margins_activity_main"
+                android:layout_marginLeft="@dimen/btn_margins_activity_main"
+                android:text="@string/btn_S_activity_main"
+                android:textColor="@color/colorPrimary"
+                android:background="@layout/btn_border_settings"/>
+            <Button
+                android:id="@+id/btn_m_size"
+                android:layout_width="@dimen/btn_box_size_activity_main"
+                android:layout_height="@dimen/btn_box_size_activity_main"
+                android:layout_below="@id/radiogroup_colors_main"
+                android:layout_toRightOf="@id/btn_s_size"
+                android:layout_marginTop="@dimen/btn_margins_activity_main"
+                android:layout_marginLeft="@dimen/btn_margins_activity_main"
+                android:text="@string/btn_M_activity_main"
+                android:textColor="@color/colorPrimary"
+                android:background="@layout/btn_border_settings"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
