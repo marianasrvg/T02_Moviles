@@ -113,7 +113,28 @@
                 android:text="@string/btn_M_activity_main"
                 android:textColor="@color/colorPrimary"
                 android:background="@layout/btn_border_settings"/>
-
+            <Button
+                android:id="@+id/btn_l_size"
+                android:layout_width="@dimen/btn_box_size_activity_main"
+                android:layout_height="@dimen/btn_box_size_activity_main"
+                android:layout_below="@id/radiogroup_colors_main"
+                android:layout_toRightOf="@id/btn_m_size"
+                android:layout_marginTop="@dimen/btn_margins_activity_main"
+                android:layout_marginLeft="@dimen/btn_margins_activity_main"
+                android:text="@string/btn_L_activity_main"
+                android:textColor="@color/colorPrimary"
+                android:background="@layout/btn_border_settings"/>
+            <Button
+                android:id="@+id/btn_xl_size"
+                android:layout_width="@dimen/btn_box_size_activity_main"
+                android:layout_height="@dimen/btn_box_size_activity_main"
+                android:layout_below="@id/radiogroup_colors_main"
+                android:layout_toRightOf="@id/btn_l_size"
+                android:layout_marginTop="@dimen/btn_margins_activity_main"
+                android:layout_marginLeft="@dimen/btn_margins_activity_main"
+                android:text="@string/btn_XL_activity_main"
+                android:textColor="@color/colorPrimary"
+                android:background="@layout/btn_border_settings"/>
         </RelativeLayout>
     </LinearLayout>
 </ScrollView>
