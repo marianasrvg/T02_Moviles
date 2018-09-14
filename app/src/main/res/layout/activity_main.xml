@@ -119,6 +119,7 @@
                 android:text="@string/btn_S_activity_main"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/btn_border_settings"
+                android:onClick="setSizeButton"
                 />
             <Button
                 android:id="@+id/btn_m_size"
@@ -131,7 +132,7 @@
                 android:text="@string/btn_M_activity_main"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/btn_border_settings"
-                />
+                android:onClick="setSizeButton"/>
             <Button
                 android:id="@+id/btn_l_size"
                 android:layout_width="@dimen/btn_box_size_activity_main"
@@ -143,7 +144,7 @@
                 android:text="@string/btn_L_activity_main"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/btn_border_settings"
-                />
+                android:onClick="setSizeButton"/>
             <Button
                 android:id="@+id/btn_xl_size"
                 android:layout_width="@dimen/btn_box_size_activity_main"
@@ -155,7 +156,7 @@
                 android:text="@string/btn_XL_activity_main"
                 android:textColor="@color/colorPrimary"
                 android:background="@drawable/btn_border_settings"
-                />
+                android:onClick="setSizeButton"/>
 
             <TextView
                 android:id="@+id/text_descriptions_title_main"
@@ -209,9 +210,11 @@
                 android:layout_below="@id/text_measurement_main"
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="@dimen/btn_margins_activity_main"
+                android:layout_marginBottom="50dp"
                 android:text="@string/btn_car"
                 android:textColor="@android:color/white"
-                android:background="@color/colorGray"/>
+                android:background="@color/colorGrayDark"
+                android:onClick="addToCar"/>
 
         </RelativeLayout>
 
